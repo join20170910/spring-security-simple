@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d765e6fe-c938-443f-98f3-a02647b6ef6f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YpTBQ2k9TTSBChfIa1YoXPUWUN" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="MyBatisLogPluginindexNum" value="153" />
+    <property name="MyBatisLogPluginparameters" value="Parameters:" />
+    <property name="MyBatisLogPluginpreparing" value="Preparing:" />
+    <property name="MyBatisLogPluginrunning" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/ws/security/config" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\study_space\spring-security-simple\src\main\java\com\ws\security\config" />
+      <recent name="F:\study_space\spring-security-simple\src\main\resources\sql" />
+      <recent name="F:\study_space\spring-security-simple\src\main\java\com\ws\security" />
+      <recent name="F:\study_space\spring-security-simple\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-security-simple" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ws.security.SecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d765e6fe-c938-443f-98f3-a02647b6ef6f" name="Default Changelist" comment="" />
+      <created>1583638399213</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583638399213</updated>
+      <workItem from="1583638404524" duration="5545000" />
+      <workItem from="1583644007692" duration="114000" />
+      <workItem from="1583644168555" duration="84000" />
+      <workItem from="1583644295887" duration="20617000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="26" key="#Project_Structure" timestamp="1583639466660">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state x="275" y="26" key="#Project_Structure/0.0.1366.737@0.0.1366.737" timestamp="1583639466660" />
+    <state x="413" y="122" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1583660191270">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state x="413" y="122" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.737@0.0.1366.737" timestamp="1583660191270" />
+    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser" timestamp="1583658804380">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser/0.0.1366.737@0.0.1366.737" timestamp="1583658804380" />
+    <state x="309" y="292" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1583670503877">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state x="309" y="292" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.737@0.0.1366.737" timestamp="1583670503877" />
+    <state width="471" height="438" key="DebuggerActiveHint" timestamp="1583660746030">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="471" height="438" key="DebuggerActiveHint/0.0.1366.737@0.0.1366.737" timestamp="1583660746030" />
+    <state width="1322" height="57" key="GridCell.Tab.0.bottom" timestamp="1583672364941">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="1322" height="57" key="GridCell.Tab.0.bottom/0.0.1366.737@0.0.1366.737" timestamp="1583672364941" />
+    <state width="1322" height="57" key="GridCell.Tab.0.center" timestamp="1583672364941">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="1322" height="57" key="GridCell.Tab.0.center/0.0.1366.737@0.0.1366.737" timestamp="1583672364941" />
+    <state width="1322" height="57" key="GridCell.Tab.0.left" timestamp="1583672364941">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="1322" height="57" key="GridCell.Tab.0.left/0.0.1366.737@0.0.1366.737" timestamp="1583672364941" />
+    <state width="1322" height="57" key="GridCell.Tab.0.right" timestamp="1583672364941">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="1322" height="57" key="GridCell.Tab.0.right/0.0.1366.737@0.0.1366.737" timestamp="1583672364941" />
+    <state width="1322" height="425" key="GridCell.Tab.1.bottom" timestamp="1583671902719">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="1322" height="425" key="GridCell.Tab.1.bottom/0.0.1366.737@0.0.1366.737" timestamp="1583671902719" />
+    <state width="1322" height="425" key="GridCell.Tab.1.center" timestamp="1583671902718">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="1322" height="425" key="GridCell.Tab.1.center/0.0.1366.737@0.0.1366.737" timestamp="1583671902718" />
+    <state width="1322" height="425" key="GridCell.Tab.1.left" timestamp="1583671902718">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="1322" height="425" key="GridCell.Tab.1.left/0.0.1366.737@0.0.1366.737" timestamp="1583671902718" />
+    <state width="1322" height="425" key="GridCell.Tab.1.right" timestamp="1583671902718">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="1322" height="425" key="GridCell.Tab.1.right/0.0.1366.737@0.0.1366.737" timestamp="1583671902718" />
+    <state width="1322" height="425" key="GridCell.Tab.2.bottom" timestamp="1583671902719">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="1322" height="425" key="GridCell.Tab.2.bottom/0.0.1366.737@0.0.1366.737" timestamp="1583671902719" />
+    <state width="1322" height="425" key="GridCell.Tab.2.center" timestamp="1583671902719">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="1322" height="425" key="GridCell.Tab.2.center/0.0.1366.737@0.0.1366.737" timestamp="1583671902719" />
+    <state width="1322" height="425" key="GridCell.Tab.2.left" timestamp="1583671902719">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="1322" height="425" key="GridCell.Tab.2.left/0.0.1366.737@0.0.1366.737" timestamp="1583671902719" />
+    <state width="1322" height="425" key="GridCell.Tab.2.right" timestamp="1583671902719">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="1322" height="425" key="GridCell.Tab.2.right/0.0.1366.737@0.0.1366.737" timestamp="1583671902719" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1583644254802">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.737@0.0.1366.737" timestamp="1583644254802" />
+    <state width="691" height="376" key="XDebugger.FullValuePopup" timestamp="1583649364108">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state width="691" height="376" key="XDebugger.FullValuePopup/0.0.1366.737@0.0.1366.737" timestamp="1583649364108" />
+    <state x="363" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1583644295814">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state x="363" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.737@0.0.1366.737" timestamp="1583644295814" />
+    <state x="155" y="103" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1583654444056">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state x="155" y="103" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.737@0.0.1366.737" timestamp="1583654444056" />
+    <state x="359" y="99" width="647" height="538" key="find.popup" timestamp="1583659318590">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state x="359" y="99" width="647" height="538" key="find.popup/0.0.1366.737@0.0.1366.737" timestamp="1583659318590" />
+    <state x="123" y="16" width="672" height="678" key="search.everywhere.popup" timestamp="1583662768989">
+      <screen x="0" y="0" width="1366" height="737" />
+    </state>
+    <state x="123" y="16" width="672" height="678" key="search.everywhere.popup/0.0.1366.737@0.0.1366.737" timestamp="1583662768989" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ws/security/config/service/UserDetailsServiceImpl.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ws/security/controller/AuthController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ws/security/config/filter/JwtFilter.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ws/security/config/filter/JwtFilter.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ws/security/config/filter/JwtFilter.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
