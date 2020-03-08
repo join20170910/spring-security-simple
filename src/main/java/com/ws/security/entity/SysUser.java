@@ -1,5 +1,9 @@
 package com.ws.security.entity;
 
+import com.baomidou.mybatisplus.annotations.TableField;
+import org.springframework.security.core.GrantedAuthority;
+
+import java.util.Collection;
 import java.util.Date;
 import java.io.Serializable;
 
@@ -20,7 +24,7 @@ public class SysUser implements Serializable {
     //账号
     private String account;
     //用户名
-    private String userName;
+    private String username;
     //用户密码
     private String password;
     //上一次登录时间
@@ -42,6 +46,8 @@ public class SysUser implements Serializable {
     //修改人
     private Integer updateUser;
 
+    @TableField(exist = false)
+    private Collection<? extends GrantedAuthority> authorities;
 
     public Integer getId() {
         return id;
@@ -59,12 +65,12 @@ public class SysUser implements Serializable {
         this.account = account;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -147,4 +153,11 @@ public class SysUser implements Serializable {
         this.updateUser = updateUser;
     }
 
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return authorities;
+    }
+
+    public void setAuthorities(Collection<? extends GrantedAuthority> authorities) {
+        this.authorities = authorities;
+    }
 }

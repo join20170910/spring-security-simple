@@ -9,6 +9,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import javax.servlet.FilterChain;
@@ -30,14 +31,18 @@ import java.io.IOException;
 
 public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
-    @Value("${jwt.tokenHead:Bearer}")
     private String tokenHead;
+    private String authorization;
 
     private AuthenticationManager authenticationManager;
-    @Autowired
     private JwtTokenUtils jwtTokenUtils;
-    public JWTAuthenticationFilter(AuthenticationManager authenticationManager) {
+    public JWTAuthenticationFilter(AuthenticationManager authenticationManager,
+                                   JwtTokenUtils jwtTokenUtils,String tokenHead,String authorization) {
         this.authenticationManager = authenticationManager;
+        this.tokenHead = tokenHead;
+        this.jwtTokenUtils = jwtTokenUtils;
+        this.authorization = authorization;
+        super.setFilterProcessesUrl("/auth/login");
     }
 
     @Override
@@ -62,13 +67,13 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 
         // 查看源代码会发现调用getPrincipal()方法会返回一个实现了`UserDetails`接口的对象
         // 所以就是JwtUser啦
-        SysUser jwtUser = (SysUser) authResult.getPrincipal();
+        User jwtUser = (User) authResult.getPrincipal();
         System.out.println("jwtUser:" + jwtUser.toString());
-        String token = jwtTokenUtils.createToken(jwtUser.getUserName(), false);
+        String token = jwtTokenUtils.createToken(jwtUser.getUsername(), false);
         // 返回创建成功的token
         // 但是这里创建的token只是单纯的token
         // 按照jwt的规定，最后请求的格式应该是 `Bearer token`
-        response.setHeader("token", tokenHead + token);
+        response.setHeader(authorization, tokenHead + token);
     }
 
     // 这是验证失败时候调用的方法

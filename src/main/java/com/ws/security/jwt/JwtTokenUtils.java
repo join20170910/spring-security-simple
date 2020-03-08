@@ -22,7 +22,6 @@ import java.util.Date;
  * @Version:        1.0
  */
 
-@Component
 public class JwtTokenUtils {
 
     private Clock clock = DefaultClock.INSTANCE;

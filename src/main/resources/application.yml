@@ -58,7 +58,7 @@ logging:
   level:
     org:
       springframework:
-        security=info:
+        security: info
 
 jwt:
   header: Authorization

@@ -1,8 +1,13 @@
 package com.ws.security.config;
 
+import com.ws.security.config.filter.JWTAuthenticationFilter;
+import com.ws.security.config.filter.JWTAuthorizationFilter;
 import com.ws.security.config.handler.*;
 import com.ws.security.config.service.UserDetailsServiceImpl;
+import com.ws.security.jwt.JwtTokenUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.ObjectPostProcessor;
@@ -10,6 +15,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
@@ -22,6 +28,13 @@ import org.springframework.security.web.access.intercept.FilterSecurityIntercept
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Value("${jwt.header:Authorization}")
+    private String authorization;
+
+    @Value("${jwt.tokenHead:Bearer}")
+    private String tokenHead;
+
     //登录成功处理逻辑
     @Autowired
     CustomizeAuthenticationSuccessHandler authenticationSuccessHandler;
@@ -61,18 +74,21 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return new UserDetailsServiceImpl();
     }
 
-    @Autowired
-    private CustomizeAbstractSecurityInterceptor securityInterceptor;
-
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         // 设置默认的加密方式（强hash方式加密）
         return new BCryptPasswordEncoder();
     }
 
+    @Bean
+    @Qualifier("jwtTokenUtils")
+    public JwtTokenUtils jwtTokenUtils(){
+        return new JwtTokenUtils();
+    }
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(userDetailsService());
+        auth.userDetailsService(userDetailsService()).passwordEncoder(passwordEncoder());
     }
 
     @Override
@@ -104,9 +120,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     accessDeniedHandler(accessDeniedHandler).//权限拒绝处理逻辑
                     authenticationEntryPoint(authenticationEntryPoint).//匿名用户访问无权限资源时的异常处理
                 //会话管理
-                and().sessionManagement().
-                    maximumSessions(1).//同一账号同时登录最大用户数
-                    expiredSessionStrategy(sessionInformationExpiredStrategy);//会话失效(账号被挤下线)处理逻辑
-        http.addFilterBefore(securityInterceptor, FilterSecurityInterceptor.class);
+                and()
+                .addFilter(new JWTAuthenticationFilter(authenticationManager(),jwtTokenUtils(),tokenHead,authorization))
+                .addFilter(new JWTAuthorizationFilter(authenticationManager(),authorization))
+                // 不需要session
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);;
     }
 }
